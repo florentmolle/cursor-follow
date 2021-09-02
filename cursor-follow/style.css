@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(41,41,41);
+}
+html{/* cursor: none; can be use for hide the cursor */}
+h1{
+    color: snow;
+    text-align: center;
+    margin-top: 10vh;
+}
+#circle{
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);/*place him in the center of the cursor*/
+    border: 2px solid snow;
+    border-radius: 50%;
+    z-index: 100; /*be sure to stay on top of everyone*/
+    pointer-events: none;/*be sure it's not interact with other elements*/
+}
